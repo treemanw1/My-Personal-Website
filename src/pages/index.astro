@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CurrentTime from '../components/CurrentTime'
+---
+
+<Layout title="Neville's Website :)">
+	<main class="bg-black flex flex-col justify-center items-center h-screen">
+		<img class="mb-2" src="meditation.jpg">
+		<CurrentTime client:visible />
+	</main>
+</Layout>
