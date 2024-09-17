@@ -1,11 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import CurrentTime from '../components/CurrentTime'
+import Layout from "../layouts/Layout.astro";
+import CurrentTime from "../components/CurrentTime";
+import Header from "../components/Header";
 ---
 
-<Layout title="Neville's Website :)">
-	<main class="bg-black flex flex-col justify-center items-center h-screen">
-		<img class="mb-2" src="meditation.jpg">
-		<CurrentTime client:visible />
-	</main>
+<Layout title="Neville's Digital Garden">
+    <!-- <Header /> -->
+    <div class="bg-[#fafafa] text-black flex-grow flex flex-col justify-center items-center">
+        <img class="mb-2" src="meditation.jpg" />
+        <CurrentTime client:visible />
+        <a href="home" class="hover:underline">Welcome to my site!</a>
+    </div>
 </Layout>

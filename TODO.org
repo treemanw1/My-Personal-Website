@@ -1,0 +1,7 @@
+* TODO Pick font (Preferably FiraCode)
+* TODO Main page design
+** TODO scuffed layout (similar to index)
+** TODO three.js plant
+** TODO dice button (random page)
+** TODO dark mode button
+* TODO 3D graph of pages

@@ -13,7 +13,7 @@ const CurrentTime: React.FC = () => {
 		};
 	}, []);
 
-	return <p className="text-white italic" suppressHydrationWarning>Time in Singapore {currentTime.toLocaleTimeString()}</p>;
+	return <p className="italic" suppressHydrationWarning>Time in Singapore {currentTime.toLocaleTimeString()}</p>;
 }
 
 export default CurrentTime;
