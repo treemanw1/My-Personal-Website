@@ -4,7 +4,7 @@ import { Scene } from "./Scene";
 
 export function FiberContainer() {
   return (
-    <Canvas camera={{ position: [8.9666, 1.0365, 5.556165], fov: 40 }} shadows>
+    <Canvas camera={{ position: [9.9666, 3.0365, 6.556165], fov: 35 }} shadows>
       <Scene />
       {/* <OrbitControls minDistance={1} maxDistance={200} /> */}
     </Canvas>

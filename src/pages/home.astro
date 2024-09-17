@@ -5,17 +5,20 @@ import { FiberContainer } from "../components/three/FiberContainer";
 
 <Layout title="Neville's Website :)">
     <!-- <Header /> -->
-	<div class="bg-lue-300 flex flex-grow justify-center items-center">
-		<div class="bg-ink-200 flex flex-col w-[50vw] h-[180vh] mt-[10vh] gap-3">
-			<h1 class="text-2xl">My Digital Garden</h1>
-			<p>Hence the trees (courtesy of <a href="https://www.youtube.com/watch?v=IGK6eceWyU4&ab_channel=devaslife" class="hover:underline">devaslife</a>). Ever-changing and unfiltered.</p>
+	<div class="flex flex-grow justify-center items-center">
+		<div class="flex flex-col w-[50vw] h-[180vh] mt-[10vh] gap-3">
+			<h1 class="text-3xl">My Digital Garden</h1>
+			<p>Just a space to share unfiltered (often incomplete) thoughts on a variety of topics.</p>
+			<!-- <p>Hence the <a href="https://www.youtube.com/watch?v=IGK6eceWyU4&ab_channel=devaslife" class="hover:underline">trees</a>. Ever-changing and unfiltered.</p> -->
 			<div class="w-[25vw] h-[30vh]">
 				<FiberContainer client:load/>
 			</div>
-			<div class="flex flex-col">
-				<a class="hover:underline">Software Engineering</a>
-				<a href="book-review" class="hover:underline">Book Reviews</a>
-			</div>
+			<!-- <div class="flex flex-col gap-1">
+				<h1 class="text-2xl">Featured Pages</h1>
+				<a class="text-xl hover:underline" href="book-reviews">Book reviews</a>
+				<a class="text-xl hover:underline" href="projects">Engineering</a>
+				<a class="text-xl hover:underline" href="book-reviews">Food reviews</a>
+			</div> -->
 		</div>
     </div>
 </Layout>

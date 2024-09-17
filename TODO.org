@@ -1,7 +1,13 @@
 * TODO Pick font (Preferably FiraCode)
 * TODO Main page design
+I was thinking if I should separate the wiki part from non-knowledge stuff like
+food or book reviews. Think the better question is how should my main page be
+organized.
+- Recent articles (fosho)
+- Work stuff (easy access for potential employers ig)
+
 ** TODO scuffed layout (similar to index)
-** TODO three.js plant
+** DONE three.js plant
 ** TODO dice button (random page)
 ** TODO dark mode button
 * TODO 3D graph of pages
