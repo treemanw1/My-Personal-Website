@@ -4,9 +4,11 @@ I was thinking if I should separate the wiki part from non-knowledge stuff like
 food or book reviews. Think the better question is how should my main page be
 organized.
 - Recent articles (fosho)
-- Work stuff (easy access for potential employers ig)
-
+  Articles or Essays. I like the aesthetic of Essay better.
+** DONE My work/intern experience
 ** TODO scuffed layout (similar to index)
+just do a rough one first, can touch up later
+
 ** DONE three.js plant
 ** TODO dice button (random page)
 ** TODO dark mode button
