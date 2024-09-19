@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-import { FiberContainer } from '../components/three/FiberContainer';
+import { Analytics } from '@vercel/analytics/react';
 const { title } = Astro.props;
 ---
 
@@ -19,6 +19,7 @@ const { title } = Astro.props;
 	<body>
 		<main class="flex flex-col text-black h-screen">
 			<slot />
+			<Analytics />
 		</main>
 	</body>
 </html>
