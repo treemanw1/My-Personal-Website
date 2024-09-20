@@ -5,21 +5,28 @@ import EssayLayout from "../layouts/EssayLayout.astro";
 
 <Layout title="Premature Abstraction">
 	<div class="flex flex-grow justify-center items-center">
-		<div class="flex flex-col w-[55vw] h-[90vh] mt-[10vh]">
-			<h1 class="text-3xl mb-3">Premature Abstractions: Rookie SWE Mistake</h1>
+		<div class="flex flex-col w-[85vw] md:w-[55vw] h-[90vh] mt-[10vh]">
+			<h1 class="text-3xl mb-3">Premature Abstraction: Rule Of Three</h1>
 			<p>
 				19 September 2024
 			</p>
-			<div class="flex flex-col w-3/4 gap-2 mt-2">
+			<div class="flex flex-col md:w-3/4 gap-2 mt-2">
 				<!-- <h1 class="text-xl mt-1">Chasing Perfectionism</h1> -->
-				<p>
-					Something something tendency to abstract
+				<p class="italic">
+					Abstraction: Moving repeated code into a function, method, or class
+					that can be reused across a codebase.
 				</p>
 				<p>
-					Is abstraction even the right word? I'm talking about making stuff DRY.
+					As a newbie writing software (often from scratch), I often find myself drawn toward
+					abstracting code the moment the opportunity presents itself. However, I realize that the
+					costs of premature abstraction (extra overhead following code trails into a new function)
+					outweigh the little benefit (lesser lines of code).
 				</p>
 				<p>
-
+					I've found that a helpful general heuristic to avoid this problem is the rule of three:
+				</p>
+				<p class="italic">
+					&nbsp&nbspIf a piece of code is copied more than twice, it needs to be abstracted out.
 				</p>
 			</div>
 		</div>

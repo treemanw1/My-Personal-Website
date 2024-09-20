@@ -1,15 +1,21 @@
-* TODO Pick font (Preferably FiraCode)
-* TODO Main page design
+Write about whatever I want to write about.
+
+* TODO Think about how to organize stuff
+* TODO Astro vs other file types
+* TODO linter (maybe prettier)
+* DONE mobile responsiveness
+
+* TODO Change font (Preferably FiraCode)
+* DONE Main page design
 I was thinking if I should separate the wiki part from non-knowledge stuff like
 food or book reviews. Think the better question is how should my main page be
 organized.
-- Recent articles (fosho)
-  Articles or Essays. I like the aesthetic of Essay better.
 ** DONE My work/intern experience
-** TODO scuffed layout (similar to index)
+** DONE scuffed layout (similar to index)
 just do a rough one first, can touch up later
-
 ** DONE three.js plant
-** TODO dice button (random page)
-** TODO dark mode button
-* TODO 3D graph of pages
+* TODO dice button (random page)
+* TODO dark mode button
+* TODO Digital garden main page
+** TODO look into python graph visualisation software
+Think forge-graph is what I'm looking for (2D)
