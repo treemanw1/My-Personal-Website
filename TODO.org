@@ -1,11 +1,29 @@
 Write about whatever I want to write about.
 
-* TODO Think about how to organize stuff
-* TODO Astro vs other file types
-* TODO linter (maybe prettier)
-* DONE mobile responsiveness
+* TODO Minor Tasks
+** TODO change font (Preferably FiraCode)
+** TODO dice button (random page)
+** TODO dark mode button
+** TODO Astro vs other file types
+** TODO linter (maybe prettier)
 
-* TODO Change font (Preferably FiraCode)
+
+* TODO Site Architecture
+** TODO Page graph system
+How to tag pages to "themes"/"topics"?  I think right now tagging pages/essays
+to whatever topic node is just fine.
+*** TODO Programatically adding node to graph based on existing pages
+
+
+* DONE
+* DONE mobile responsiveness
+* DONE Digital garden main page ** DONE look into python graph visualisation
+software Think forge-graph is what I'm looking for (2D)
+** DONE think about graph structure
+I'm guessing its gonna be tags to pages. That makes sense to me.
+
+* DONE Think about how to organize stuff
+I guess the graph helps with this part also
 * DONE Main page design
 I was thinking if I should separate the wiki part from non-knowledge stuff like
 food or book reviews. Think the better question is how should my main page be
@@ -14,8 +32,3 @@ organized.
 ** DONE scuffed layout (similar to index)
 just do a rough one first, can touch up later
 ** DONE three.js plant
-* TODO dice button (random page)
-* TODO dark mode button
-* TODO Digital garden main page
-** TODO look into python graph visualisation software
-Think forge-graph is what I'm looking for (2D)
