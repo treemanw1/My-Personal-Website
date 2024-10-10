@@ -3,14 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import { FiberContainer } from "../components/three/FiberContainer";
 ---
 
-<Layout title="Neville's Website :)">
+<Layout title="Neville's Website">
     <!-- <Header /> -->
 	<div class="flex flex-grow justify-center items-center">
 		<div class="flex flex-col my-[2.5vh] md:my-0 md:flex-row w-[85vw] md:w-[55vw] md:h-[90vh] md:mt-[10vh]">
 			<div class="flex flex-col md:w-1/2">
-				<h1 class="text-3xl mb-3">My Digital Garden</h1>
-				<p class="text-md md:w-5/6">Constantly changing, imperfect by design.</p>
-				<!-- <p>Hence the <a href="https://www.youtube.com/watch?v=IGK6eceWyU4&ab_channel=devaslife" class="hover:underline">trees</a>. Ever-changing and unfiltered.</p> -->
+				<div class="flex">
+					<a class="text-3xl mb-3 md:mr-6" href="garden">My Digital Garden</a>
+					<!-- <a class="self-center">About me</a> -->
+				</div>
+				<div class="flex-col md:flex justify-between w-[90%]">
+					<p class="text-md">Constantly changing, imperfect by design.</p>
+					<!-- <a href="about">About me</a> -->
+				</div>
 				<div class="md:hidden w-full h-[30vh]">
 					<FiberContainer cameraPos={{x: 13, y: 3.0365 , z: 6.655616}} client:load/>
 				</div>
@@ -47,7 +52,8 @@ import { FiberContainer } from "../components/three/FiberContainer";
 				</div>
 				<div class="flex flex-col gap-1">
 					<h1 class="text-3xl mt-8 mb-1">Essays</h1>
-					<a class="text-xl hover:underline">TIL: Digital Timestamps</a>
+					<a class="text-xl hover:underline" href="csr-vs-ssr">Frontend Explorations: Client/Server-Side Rendering</a>
+					<!-- <a class="text-xl hover:underline" href="bifrost-internship">Internship Reflections: Learnings So Far</a> -->
 					<a class="text-xl hover:underline" href="premature-abstraction">Premature Abstraction: Rule Of Three</a>
 					<a class="text-xl hover:underline" href="first-commit">First Commit: The Ethos Behind The Site</a>
 				</div>
