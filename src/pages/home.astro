@@ -7,15 +7,17 @@ import { FiberContainer } from "../components/three/FiberContainer";
     <!-- <Header /> -->
 	<div class="flex flex-grow justify-center items-center">
 		<div class="flex flex-col my-[2.5vh] md:my-0 md:flex-row w-[85vw] md:w-[55vw] md:h-[90vh] md:mt-[10vh]">
-			<div class="flex flex-col md:w-1/2">
-				<div class="flex">
-					<a class="text-3xl mb-3 md:mr-6" href="garden">My Digital Garden</a>
-					<!-- <a class="self-center">About me</a> -->
+			<div class="flex flex-col md:w-1/2 h-fit">
+				<div class="flex gap-4">
+					<a class="text-3xl md:mr-2" href="garden">My Digital Garden</a>
+					<a class="self-center" href="/blog">
+						Blog
+					</a>
+					<a class="self-center" href="/about">
+						About Me
+					</a>
 				</div>
-				<div class="flex-col md:flex justify-between w-[90%]">
-					<p class="text-md">Constantly changing, imperfect by design.</p>
-					<!-- <a href="about">About me</a> -->
-				</div>
+				<p class="text-md mt-3 italic">Imperfect by design.</p>
 				<div class="md:hidden w-full h-[30vh]">
 					<FiberContainer cameraPos={{x: 13, y: 3.0365 , z: 6.655616}} client:load/>
 				</div>
@@ -50,16 +52,14 @@ import { FiberContainer } from "../components/three/FiberContainer";
 						</p>
 					</div>
 				</div>
-				<div class="flex flex-col gap-1">
-					<h1 class="text-3xl mt-8 mb-1">Essays - Personal Wiki</h1>
-					<a class="text-xl hover:underline" href="programming-mesocycles">Intermediate Lifting Guide: Programming Mesocycles</a>
+				<div class="flex flex-col gap-1 mt-6">
+					<h1 class="text-2xl mb-1">Recent Posts</h1>
 					<a class="text-xl hover:underline" href="csr-vs-ssr">Frontend Explorations: Client/Server-Side Rendering</a>
-					<!-- <a class="text-xl hover:underline" href="bifrost-internship">Internship Reflections: Learnings So Far</a> -->
 					<a class="text-xl hover:underline" href="when-to-abstract-code">When Should You Abstract Code?</a>
 					<a class="text-xl hover:underline" href="first-commit">First Commit: The Ethos Behind The Site</a>
 				</div>
 			</div>
-			<div class="hidden md:flex flex-col w-1/2">
+			<div class="hidden md:flex flex-col w-1/2 h-fit">
 				<div class="mb-3">
 					<h1 class="text-3xl mb-3">Work Experience</h1>
 					<div class="flex justify-between">

@@ -17,24 +17,19 @@ import EssayLayout from "../layouts/EssayLayout.astro";
 	</p>
 		<h1 class="text-xl mt-1">What is Client-Side Rendering?</h1>
 	<p>
-		The default means by which React renders content on the page. The client first receives an empty HTML skeleton
-		and a bundle.js script which it executes, populating the DOM with components.
+		The default means by which React renders content on the page. The client first receives an empty HTML skeleton and a bundle.js script which it executes, populating the DOM with components.
 
-		If there exists content that is dependent on database queries an additional query is made, after which content
-		is successfully rendered.
+		If there exists content that is dependent on database queries an additional query is made, after which content is successfully rendered.
 	</p>
 	<p>
-		The issue with this is that First Paint, the time before the user seems something on the screen, is substantial
-		because the user stares at a blank screen while bundle.js is executing, especially if the React app is large.
+		The issue with this is that First Paint, the time before the user seems something on the screen, is substantial because the user stares at a blank screen while bundle.js is executing, especially if the React app is large.
 	</p>
 	<h1 class="text-xl mt-1">What is Server-Side Rendering?</h1>
 	<p>
 		Server-Side Rendering I describe here refers to React's Server Components and Next's default React components.
 	</p>
 	<p>
-		With Server-Side Rendering, the page shell is rendered first instead of an empty HTML skeleton, giving us a slightly
-		better First Paint. Because this component is rendered on the server, we can run our database query prior to this first
-		request giving us a much improved Content Paint result.
+		With Server-Side Rendering, the page shell is rendered first instead of an empty HTML skeleton, giving us a slightly better First Paint. Because this component is rendered on the server, we can run our database query prior to this first request giving us a much improved Content Paint result.
 	</p>
 	<p>
 		Bundle.js is then downloaded, hydrating the page components.
