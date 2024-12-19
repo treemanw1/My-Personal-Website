@@ -1,25 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
+const sortedPosts = posts.sort((a: any, b: any) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
 ---
 
 <Layout title="Neville's Website">
-	<div class="flex flex-grow justify-center items-center">
-		<div class="flex flex-col w-[85vw] md:w-[55vw] h-fit-content min-h-[90vh] mt-[10vh]">
-			<h1 class="text-3xl mb-3">Blog</h1>
-			<p>Still figuring out how to organize content on the site.</p>
-			<div class="flex flex-col gap-1 mt-2">
-				<a class="text-xl hover:underline" href="blog/programming-mesocycles">Intermediate Lifting: Programming Mesocycles</a>
-				<a class="text-xl hover:underline" href="blog/csr-vs-ssr">Frontend Explorations: Client/Server-Side Rendering</a>
-				<!-- <a class="text-xl hover:underline" href="bifrost-internship">Internship Reflections: Learnings So Far</a> -->
-				<a class="text-xl hover:underline" href="blog/when-to-abstract-code">When Should You Abstract Code?</a>
-				<a class="text-xl hover:underline" href="blog/first-commit">First Commit: The Ethos Behind The Site</a>
-			</div>
-			<h1 class="text-2xl mt-4 mb-2">Future Writing</h1>
-			<div class="flex flex-col gap-1">
-				<a class="text-xl hover:underline" href="">Separation Of Concerns: Repository vs Artifact Layers</a>
-				<a class="text-xl hover:underline" href="">Vegetarian Cai Fan Reviews</a>
-				<a class="text-xl hover:underline" href="">Tape Camcorders</a>
-			</div>
-		</div>
-	</div>
+    <div class="flex flex-grow justify-center items-center">
+        <div
+            class="flex flex-col w-[85vw] md:w-[55vw] h-fit-content min-h-[90vh] mt-[10vh]"
+        >
+            <h1 class="text-3xl mb-3">Blog</h1>
+            <p>Still figuring out how to organize content on the site.</p>
+            <ul class="flex flex-col mt-2 gap-1">
+                {
+                    posts.map((post: any) => (
+                        <li class="text-xl">
+                            <a href={post.url}>{post.frontmatter.title}</a>
+                        </li>
+                    ))
+                }
+            </ul>
+            </div>
+        </div>
+    </div>
 </Layout>

@@ -26,5 +26,9 @@
     "tailwindcss": "^3.4.3",
     "three": "^0.168.0",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "prettier": "^3.3.3"
   }
 }

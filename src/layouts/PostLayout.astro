@@ -1,0 +1,38 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{frontmatter.title}</title>
+    </head>
+    <body>
+        <main class="flex flex-col text-black h-screen">
+            <div class="flex flex-grow justify-center items-center">
+                <div
+                    class="flex flex-col w-[85vw] md:w-[55vw] h-fit-content min-h-[90vh] mt-[10vh]"
+                >
+                    <h1 class="text-3xl mb-3">{frontmatter.title}</h1>
+                    <p>
+                        {new Date(frontmatter.date).toDateString()}
+                    </p>
+                    <div class="flex flex-col md:w-3/4 gap-2 mt-2 prose-h1:text-xl">
+						<slot />
+                    </div>
+                    <style is:global>
+                        a:hover {
+                            text-decoration: underline;	
+                        }
+                    </style>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
