@@ -23,7 +23,7 @@ const { frontmatter } = Astro.props;
                     <p>
                         {new Date(frontmatter.date).toDateString()}
                     </p>
-                    <div class="flex flex-col md:w-3/4 gap-2 mt-2 prose-h1:text-xl">
+                    <div class="flex flex-col md:w-3/4 gap-2 mt-2 mb-12 prose-h1:text-2xl prose-h2:text-xl">
 						<slot />
                     </div>
                     <style is:global>
