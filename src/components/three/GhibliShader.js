@@ -13,7 +13,9 @@ export const GhibliShader = {
     brightnessThresholds: {
       value: [0.9, 0.45, 0.001],
     },
-    lightPosition: { value: new Vector3(15, 15, 15) },
+    lightPosition: {
+      value: new Vector3(15, 15, 15),
+    },
   },
   vertexShader: /* glsl */ `
     // Set the precision for data types used in this shader

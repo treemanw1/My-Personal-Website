@@ -27,19 +27,35 @@ export function Scene() {
         ref={refTrees}
         position={[0, 0, -2]}
         colors={[
-          new Color("#427062").convertLinearToSRGB(),
-          new Color("#33594e").convertLinearToSRGB(),
-          new Color("#234549").convertLinearToSRGB(),
-          new Color("#1e363f").convertLinearToSRGB(),
+          new Color(
+            "#427062",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#33594e",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#234549",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#1e363f",
+          ).convertLinearToSRGB(),
         ]}
       />
       <Trees
         position={[0, 0, 4]}
         colors={[
-          new Color("#4a8d7e").convertLinearToSRGB(),
-          new Color("#377f6a").convertLinearToSRGB(),
-          new Color("#184f52").convertLinearToSRGB(),
-          new Color("#143b36").convertLinearToSRGB(),
+          new Color(
+            "#4a8d7e",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#377f6a",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#184f52",
+          ).convertLinearToSRGB(),
+          new Color(
+            "#143b36",
+          ).convertLinearToSRGB(),
         ]}
       />
     </>

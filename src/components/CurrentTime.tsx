@@ -1,19 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, {
+  useState,
+  useEffect,
+} from "react";
 
 const CurrentTime: React.FC = () => {
-	const [currentTime, setCurrentTime] = useState<Date>(new Date());
+  const [currentTime, setCurrentTime] =
+    useState<Date>(new Date());
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentTime(new Date());
-		}, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
 
-		return () => {
-			clearInterval(interval);
-		};
-	}, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
-	return <p className="italic" suppressHydrationWarning>Time in Singapore {currentTime.toLocaleTimeString()}</p>;
-}
+  return (
+    <p
+      className="italic"
+      suppressHydrationWarning
+    >
+      Time in Singapore{" "}
+      {currentTime.toLocaleTimeString()}
+    </p>
+  );
+};
 
 export default CurrentTime;

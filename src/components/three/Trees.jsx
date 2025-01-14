@@ -14,9 +14,11 @@ export const Trees = forwardRef((props, ref) => {
       brightnessThresholds: {
         value: [0.6, 0.35, 0.001],
       },
-      lightPosition: { value: new Vector3(15, 15, 15) },
+      lightPosition: {
+        value: new Vector3(15, 15, 15),
+      },
     }),
-    [props.colors]
+    [props.colors],
   );
 
   return (
