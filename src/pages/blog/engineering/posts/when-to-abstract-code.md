@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/PostLayout.astro
+layout: "@/layouts/PostLayout.astro"
 title: "When Should You Abstract Code?"
 date: 2024-10-19T12:00:00Z
 ---

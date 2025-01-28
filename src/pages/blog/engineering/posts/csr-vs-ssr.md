@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/PostLayout.astro
+layout: "@/layouts/PostLayout.astro"
 title: "Frontend Explorations: Client Side Rendering vs Server Side Rendering"
 date: 2024-10-10T12:00:00Z
 ---

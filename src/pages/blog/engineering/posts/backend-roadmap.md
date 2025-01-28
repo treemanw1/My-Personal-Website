@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/PostLayout.astro
+layout: "@/layouts/PostLayout.astro"
 title: "1 engineering project a week"
 date: 2025-1-13T12:00:00Z
 ---
@@ -14,8 +14,8 @@ I've also wanted to upskill myself in terms of backend development, and have
 been interested in pursuing the Roadmap.sh Backend Developer roadmap for quite
 some time now.
 
-# Week 1: DNS route
+# 1. DNS route
 
-Input a domain name and return the packet path to and from the domain name/cache.
+Input a domain name and return the packet path (human readable form) to and from the domain name/cache.
 
-# Week 2: Browser
+# 2. Browser
