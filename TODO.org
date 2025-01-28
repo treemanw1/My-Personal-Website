@@ -1,10 +1,12 @@
 Write about whatever I want to write about.
 
+
+
 * TODO Minor Tasks
 ** TODO change font (Preferably FiraCode)
 ** TODO dice button (random page)
 ** TODO dark mode button
-** TODO Astro vs other file types
+** DONE Astro vs other file types
 ** TODO linter (maybe prettier)
 
 
@@ -14,8 +16,6 @@ How to tag pages to "themes"/"topics"?  I think right now tagging pages/essays
 to whatever topic node is just fine.
 *** TODO Programatically adding node to graph based on existing pages
 
-
-* DONE
 * DONE mobile responsiveness
 * DONE Digital garden main page ** DONE look into python graph visualisation
 software Think forge-graph is what I'm looking for (2D)
