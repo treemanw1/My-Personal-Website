@@ -6,9 +6,9 @@ import { FiberContainer } from "../components/three/FiberContainer";
 <Layout title="Neville's Website">
     <!-- <Header /> -->
 	<div class="flex flex-grow justify-center items-center">
-		<div class="flex flex-col my-[2.5vh] md:my-0 md:flex-row w-[85vw] md:w-[55vw] md:h-[90vh] md:mt-[10vh]">
+		<div class="flex flex-col gap-5 my-[2.5vh] md:my-0 md:flex-row w-[85vw] md:w-[55vw] md:h-[90vh] md:mt-[10vh]">
 			<div class="flex flex-col md:w-1/2 h-fit">
-				<div class="flex gap-4">
+				<div class="hidden md:flex gap-4">
 					<a class="text-3xl md:mr-2" href="garden">My Digital Garden</a>
 					<a class="self-center" href="/blog">
 						Blog
@@ -17,11 +17,22 @@ import { FiberContainer } from "../components/three/FiberContainer";
 						About Me
 					</a>
 				</div>
+				<div class="flex md:hidden flex-col gap-4">
+					<a class="text-3xl md:mr-2" href="garden">My Digital Garden</a>
+					<div class="flex gap-6">
+						<a href="/blog">
+							Blog
+						</a>
+						<a href="/about">
+							About Me
+						</a>
+					</div>
+				</div>
 				<p class="text-md mt-3 italic">Imperfect by design.</p>
 				<div class="md:hidden w-full h-[30vh]">
 					<FiberContainer cameraPos={{x: 13, y: 3.0365 , z: 6.655616}} client:load/>
 				</div>
-				<div class="hidden md:block md:w-full h-[30vh]">
+				<div class="hidden md:block min-w-fit md:w-full h-[30vh]">
 					<FiberContainer cameraPos={{x: 9.9666, y: 3.0365 , z: 6.655616}} client:load/>
 				</div>
 				<div class="flex flex-col md:hidden">
@@ -54,8 +65,8 @@ import { FiberContainer } from "../components/three/FiberContainer";
 				</div>
 				<div class="flex flex-col gap-1 mt-6">
 					<h1 class="text-2xl mb-1">Recent Posts</h1>
-					<a class="text-xl hover:underline" href="blog/posts/csr-vs-ssr">Frontend Explorations: Client/Server-Side Rendering</a>
-					<a class="text-xl hover:underline" href="blog/posts/when-to-abstract-code">When Should You Abstract Code?</a>
+					<a class="text-xl hover:underline" href="engineering-blog/posts/csr-vs-ssr">Frontend Explorations: Client/Server-Side Rendering</a>
+					<a class="text-xl hover:underline" href="engineering-blog/posts/when-to-abstract-code">When Should You Abstract Code?</a>
 					<a class="text-xl hover:underline" href="blog/posts/first-commit">First Commit: The Ethos Behind The Site</a>
 				</div>
 			</div>
