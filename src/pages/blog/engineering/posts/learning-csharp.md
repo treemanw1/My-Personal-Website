@@ -6,33 +6,29 @@ date: 2025-1-28T12:00:00Z
 
 # Preface
 
-This pursuit aims to accomplish a few things:
-
 1. Get better at an OOP language. I chose C# because the general online
-developer sentiment seems to favour C# more than Java. 
-2. Become a better backend developer through a tool-first philosophy toward
+developer sentiment seems to favour C# more than Java.
+2. Become a better backend developer through a feature-first philosophy toward
 learning.
+3. Get acquainted with the Microsoft stack (?).
 
-The goal would be to complete one project a week as rough guideline, according
-to [Roadmap.sh's 20 backend projects](https://roadmap.sh/backend/project-ideas)
-to become a better developer.
+Goal: [~1 project](https://roadmap.sh/backend/project-ideas) a week
 
-# 1. .NET Blog Backend
-28 Jan 25 - 5 Feb 2025
+# 1. [Blog Platform API](https://github.com/treemanw1/BlogPlatformApi)
+5 Feb 25 - 7 Feb 25
 
-Build a lightweight backend with ASP.NET Core to handle user login and creation
-with passkey authentication, and CRUD operations for user comments on articles.
+A lightweight backend to power a personal blog with article CRUD operations.
 
-To-do list: 
+Stack: ASP.NET Core Minimal APIs + SQLite
 
-1. Understand .NET vs .NET Core vs ASP.NET Core
-2. Understand MVC vs Minimal APIs
-3. Evaluate Git Repository vs Database for storing markdown articles.
-4. Evaluate database selection (for comments).
-5. Define User flows + Database schema + API endpoints
-6. Research hosting options
-7. Store articles in Git repository
+# 2. Todo List API
+7 Feb 25 - Present
 
-# 2. Veggie Food Finder
+To-do application featuring CRUD operations and magic link authentication.
 
-Page that automatically displays the highest rated + cheapest + closest vegetarian food.
+Stack: ASP.NET Core MVC + Microsoft SQL Server
+
+# 3. Food Radar
+
+Page that automatically displays the highest rated + cheapest + closest food
+through integration with Google Maps API.
