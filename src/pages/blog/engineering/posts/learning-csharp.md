@@ -17,18 +17,20 @@ Goal: [~1 project](https://roadmap.sh/backend/project-ideas) a week
 # 1. [Blog Platform API](https://github.com/treemanw1/BlogPlatformApi)
 5 Feb 25 - 7 Feb 25
 
-A lightweight backend to power a personal blog with article CRUD operations.
+A simple RESTful API for managing a personal blog built with ASP.NET Core
+Minimal APIs and SQLite.
 
-Stack: ASP.NET Core Minimal APIs + SQLite
+# 2. [Todo API](https://github.com/treemanw1/TodoApi)
+7 Feb 25 - 13 Feb 25
 
-# 2. Todo List API
-7 Feb 25 - Present
-
-To-do application featuring CRUD operations and magic link authentication.
-
-Stack: ASP.NET Core MVC + Microsoft SQL Server
+A RESTful to-do API with magic link authentication built using ASP.NET Core Web
+APIs and Microsoft SQL Server.
 
 # 3. Food Radar
 
 Page that automatically displays the highest rated + cheapest + closest food
 through integration with Google Maps API.
+
+# Future technologies to learn:
+
+Azure AD for authentication
